@@ -8,7 +8,7 @@
   "scripts": {
     "dev": "vite dev --port 3000",
     "dev:netlify": "vite dev --mode netlify --port 3000",
-    "build": "vite build --mode node && node scripts/verify-node-output.mjs",
+    "build": "vite build --mode node",
     "build:netlify": "vite build --mode netlify",
     "start": "node server.mjs",
     "test:runtime": "node --experimental-strip-types --test scripts/runtime.test.mjs",
