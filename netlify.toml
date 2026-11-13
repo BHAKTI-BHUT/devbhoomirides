@@ -1,0 +1,12 @@
+[build]
+  command = "pnpm run build:netlify"
+  publish = "dist/client"
+[context.production]
+  command = "pnpm run build:netlify"
+  publish = "dist/client"
+[functions]
+  directory = "netlify/functions"
+[dev]
+  command = "pnpm run dev:netlify"
+  targetPort = 3000
+  port = 8888

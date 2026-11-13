@@ -1,0 +1,12 @@
+diff --git a/dist/chunk-QDL6ESI2.js b/dist/chunk-QDL6ESI2.js
+--- a/dist/chunk-QDL6ESI2.js
++++ b/dist/chunk-QDL6ESI2.js
+@@ -68,7 +68,7 @@
+ };
+ 
+ // src/util.ts
+-import process from "process";
++var process = { platform: globalThis.process?.platform ?? "browser" };
+ import { getTracer, withActiveSpan } from "@netlify/otel";
+ 
+ // src/headers.ts

@@ -1,0 +1,11 @@
+import { Outlet, createFileRoute } from '@tanstack/react-router'
+import { AppShell } from '@/components/AppShell'
+
+export const Route = createFileRoute('/app')({
+  head: () => ({ meta: [{ title: 'Find a Ride – Devbhoomi Rides' }] }),
+  component: () => (
+    <AppShell>
+      <Outlet />
+    </AppShell>
+  ),
+})
